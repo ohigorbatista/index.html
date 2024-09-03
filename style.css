@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(92, 171, 255);
+}
+
+nav { /* menu superior de navegação*/
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    background-color: #ff5500;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    text-decoration: none;
+    font-size: large;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+h1,
+h2 {
+    color: #0c0c0c;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align:justify;
+    margin-bottom: 20px;
+    padding-top: 80px; /* Compensa o espaço ocupado pelo menu fixo */
+}
+
+
+
+
+h2 {
+    font-size: 2rem;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+section {
+    padding: 40px;
+    text-align: justify;
+    font-size: 2rem;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+section a {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 2rem;
+}
+
+section#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contato label {
+    font-size: 2rem;
+    margin: 10px 0 5px;
+}
+
+section#contato input,
+section#contato textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section#contato input[type="submit"] {
+    background-color: #0c0c0c;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
